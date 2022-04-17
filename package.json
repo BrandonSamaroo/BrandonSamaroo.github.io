@@ -4,12 +4,21 @@
   "homepage": "https://brandonsamaroo.com",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@react-three/drei": "^9.4.3",
+    "@react-three/fiber": "^8.0.11",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-icons": "^4.3.1",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.7",
+    "three": "^0.139.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
