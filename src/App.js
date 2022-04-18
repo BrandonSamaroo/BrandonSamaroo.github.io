@@ -11,13 +11,13 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <NavBar/>
+        <NavBar />
         <div className='section-container'>
-          {/* <Background/> */}
-            <Home/>
-            <About/>
-            <Portfolio/>
-            <Contact/>
+          <Background />
+          <Home />
+          <About />
+          <Portfolio />
+          <Contact />
         </div>
       </div>
     )

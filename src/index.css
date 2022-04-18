@@ -16,25 +16,25 @@ code {
 }
 
 
-.section-container{
+.section-container {
   width: calc(100% - 110px);
   padding-left: 90px;
   padding-right: 20px;
 }
 
-.section-container>div{
+.section-container>div {
   height: 100vh;
 }
 
 
-nav{
+nav {
   width: 70px;
   height: 100vh;
   position: fixed;
-  background-color: #151B25; 
+  background-color: #151B25;
 }
 
-.nav-bar{
+.nav-bar {
   width: 100%;
   height: 100%;
   display: flex;
@@ -44,7 +44,7 @@ nav{
   padding: 0;
 }
 
-.nav-item{
+.nav-item {
   list-style-type: none;
   width: 90%;
   display: flex;
@@ -52,7 +52,7 @@ nav{
   align-items: center;
 }
 
-.nav-link{
+.nav-link {
   text-decoration: none;
   color: #9CA6B8;
   width: 100%;
@@ -61,18 +61,18 @@ nav{
   align-items: center;
 }
 
-.nav-link:visited{
+.nav-link:visited {
   text-decoration: none;
   color: #9CA6B8;
 }
 
-.icon{
+.icon {
   width: 75%;
   height: 75%;
   color: #9CA6B8;
 }
 
-.scroll-item{
+.scroll-item {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -80,43 +80,45 @@ nav{
   cursor: pointer;
 }
 
-.canvas{
+.canvas {
   width: 100%;
   height: 100vh;
   position: fixed;
-  z-index: -1;
+  z-index: -1
 }
 
-#profile-pic{
+#profile-pic {
   border-radius: 50%;
   width: 10%;
   height: auto;
   border: 3px solid #AEB8C4;
 }
 
-p{
+p {
   font-size: 20px;
   font-weight: 500;
 }
-@media screen and (max-width: 750px){
-  p{
-    font-size:17px;
-  }
-}
-@media screen and (max-width: 550px){
-  p{
-    font-size:15px;
+
+@media screen and (max-width: 750px) {
+  p {
+    font-size: 17px;
   }
 }
 
-.content-section{
+@media screen and (max-width: 550px) {
+  p {
+    font-size: 15px;
+  }
+}
+
+.content-section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.contact-form{
+.contact-form {
   width: 50%;
   display: flex;
   align-items: center;
@@ -126,11 +128,11 @@ p{
   padding: 60px 100px;
 }
 
-.contact-form>*{
+.contact-form>* {
   margin: 10px;
 }
 
-.contact-form>textarea{
+.contact-form>textarea {
   width: 100%;
   height: 150px;
   padding: 12px 20px;
@@ -142,7 +144,7 @@ p{
   resize: none;
 }
 
-.contact-form>input{
+.contact-form>input {
   padding: 10px 18px;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -151,8 +153,9 @@ p{
   font-size: 16px;
 }
 
-#btn{
-  background-color: #4CAF50; /* Green */
+#btn {
+  background-color: #4CAF50;
+  /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -163,16 +166,16 @@ p{
   cursor: pointer;
 }
 
-.contact-form>label{
+.contact-form>label {
   font-size: 20px;
 }
 
-#about>p{
+#about>p {
   width: 50%;
   text-align: center;
 }
 
-.slider{
+.slider {
   position: relative;
   display: flex;
   justify-content: center;
@@ -180,13 +183,13 @@ p{
   height: 75vh;
 }
 
-.image{
+.image {
   width: 800px;
   height: 350px;
   border-radius: 20px;
 }
 
-.right{
+.right {
   position: absolute;
   top: 50%;
   right: 20px;
@@ -196,7 +199,7 @@ p{
   cursor: pointer;
 }
 
-.left{
+.left {
   position: absolute;
   top: 50%;
   left: 20px;
@@ -204,4 +207,18 @@ p{
   color: #ccc;
   z-index: 10;
   cursor: pointer;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 20vh;
+  width: 75%;
+}
+
+.skill-icon {
+  width: 35px;
+  height: 35px;
 }
