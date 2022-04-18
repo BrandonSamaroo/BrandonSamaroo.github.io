@@ -17,8 +17,8 @@ export default function Contact(){
 
   return (
     <div id="contact" className='content-section'>
-      <h1>Send a Message!</h1>
       <form ref={form} onSubmit={sendEmail} className="contact-form">
+        <h3>Send a Message!</h3>
         <label>Name</label>
         <input type="text" name="user_name" />
         <label>Email</label>

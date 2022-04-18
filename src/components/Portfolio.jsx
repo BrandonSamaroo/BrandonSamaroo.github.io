@@ -31,7 +31,7 @@ export default function Portfolio() {
 
   return (
     <div id="portfolio" className='content-section'>
-      <h1>Projects</h1>
+      <h3>Projects</h3>
       <section className='slider'>
         <FaArrowAltCircleLeft className="left" onClick={previousSlide} />
         {sliderData.map((slide, idx) =>
@@ -43,7 +43,7 @@ export default function Portfolio() {
         )}
         <FaArrowAltCircleRight className="right" onClick={nextSlide} />
       </section>
-      <h1>Skills</h1>
+      <h3>Skills</h3>
       <div className='skills-container'>
         <FaPython className='skill-icon' />
         <DiJavascript1 className='skill-icon' />

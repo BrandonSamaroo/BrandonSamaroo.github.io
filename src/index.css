@@ -8,6 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #24333d;
   color: #AEB8C4;
+  text-align: center;
 }
 
 code {
@@ -180,7 +181,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 55vh;
 }
 
 .image {
@@ -188,6 +189,55 @@ p {
   height: 350px;
   border-radius: 20px;
 }
+
+@media screen and (max-width: 875px) {
+  .image{
+    width: 500px;
+    height: 225px;
+    border-radius: 10px;
+  }
+  .slider{
+    height: 40vh;
+  }
+  .canvas{
+    display: none;
+  }
+  #about{
+    height: 150vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image{
+    width: 300px;
+    height: 135px;
+    border-radius: 10px;
+  }
+  .slider{
+    height: 35vh;
+  }
+  .canvas{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image{
+    width: 225px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  .slider{
+    height: 30vh;
+  }
+  .canvas{
+    display: none;
+  }
+  #about{
+    height: 150vh;
+  }
+}
+
 
 .right {
   position: absolute;
@@ -212,13 +262,21 @@ p {
 .skills-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
   height: 20vh;
   width: 75%;
 }
 
 .skill-icon {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+}
+
+#portfolio{
+  justify-content: center;
+}
+
+#portfolio>*{
+  margin: -10px;
 }

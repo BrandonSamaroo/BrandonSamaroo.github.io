@@ -4,7 +4,7 @@ export default class About extends Component {
   render() {
     return (
       <div id="about" className='content-section'>
-        <h1>Who is Brandon?</h1>
+        <h3>Who is Brandon?</h3>
         <img src='https://i.ibb.co/9pn0N1m/me.jpg' alt='me' id='profile-pic'></img>
         <p>
           I'm a 25 year old Software Developer from Toronto, with a previous background in Game Development. 
