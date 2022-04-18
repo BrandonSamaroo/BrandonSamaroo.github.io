@@ -8,6 +8,7 @@ import Background from './components/Background'
 
 
 export default class App extends Component {
+
   render() {
     return (
       <div>

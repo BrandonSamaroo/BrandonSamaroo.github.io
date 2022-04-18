@@ -1,35 +1,32 @@
-import React, { Component, useRef, useState  } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import React, { Component} from 'react'
+import { Canvas} from '@react-three/fiber'
+import { Stars } from '@react-three/drei';
+import { PerspectiveCamera } from '@react-three/drei'
 
 
-function Box(props) {
-    const ref = useRef()
-    const [hovered, hover] = useState(false)
-    const [clicked, click] = useState(false)
-    useFrame((state, delta) => (ref.current.rotation.x += 0.01))
-    return (
-      <mesh
-        {...props}
-        ref={ref}
-        scale={clicked ? 1.5 : 1}
-        onClick={(event) => click(!clicked)}
-        onPointerOver={(event) => hover(true)}
-        onPointerOut={(event) => hover(false)}>
-        <boxGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
-      </mesh>
-    )
-}
 
 export default class Background extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+       x:0, y:0,
+    }
+  }
+
+  _onMouseMove(e) {
+    this.setState({ x: e.screenX, y: e.screenY });
+  }
+
+
   render() {
+    const { x, y } = this.state;
     return (
-      <div className='canvas'>
+      <div className='canvas' onMouseMove={this._onMouseMove.bind(this)}>
         <Canvas>
+            <PerspectiveCamera makeDefault position={[0+(x*0.03), 0+(y*.05), 5]}/>
+            <Stars/>
             <ambientLight />
             <pointLight position={[10, 10, 10]} />
-            <Box position={[-1.2, 0, 0]} />
-            <Box position={[1.2, 0, 0]} />
         </Canvas>
       </div>
     )
