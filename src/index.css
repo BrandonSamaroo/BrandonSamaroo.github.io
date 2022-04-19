@@ -277,3 +277,7 @@ p {
 #portfolio>*{
   margin: -10px;
 }
+
+#contact>form>*{
+  z-index: 1;
+}

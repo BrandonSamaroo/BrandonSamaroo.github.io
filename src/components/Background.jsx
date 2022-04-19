@@ -23,10 +23,9 @@ export default class Background extends Component {
     return (
       <div className='canvas' onMouseMove={this._onMouseMove.bind(this)}>
         <Canvas>
-            <PerspectiveCamera makeDefault position={[0+(x*0.03), 0+(y*.05), 5]}/>
+            <PerspectiveCamera makeDefault position={[(x*0.03), (y*.05), 5]}/>
             <Stars/>
             <ambientLight />
-            <pointLight position={[10, 10, 10]} />
         </Canvas>
       </div>
     )
