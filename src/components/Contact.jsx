@@ -16,7 +16,7 @@ export default function Contact(){
   const sendEmail = (e) => {
     e.preventDefault();
     if(e.target.user_name.value && validateEmail(e.target.user_email.value) && e.target.message.value){
-      emailjs.sendForm('service_k37amsw', 'template_bmxbxk3', form.current, 'F9Oi3adFebGL4Oth3')
+      emailjs.sendForm(`${process.env.REACT_APP_API_KEY_1}`, `${process.env.REACT_APP_API_KEY_2}`, form.current, `${process.env.REACT_APP_API_KEY_3}`)
         .then((result) => {
             console.log(result.text);
             if (result.text){
