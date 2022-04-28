@@ -7,8 +7,8 @@ import { SiExpress } from 'react-icons/si'
 //https://i.ibb.co/HhmPF6V/image.png
 const sliderData = [
   { image: 'https://i.ibb.co/SxgYj2m/1486722.jpg', alt: 'BattleShip', link: 'https://brandonsamaroo.com/Battle-Ship/' }, //battleship
-  { image: 'https://i.ibb.co/2g4s678/3308619.jpg', alt: 'Daily Community', link: 'https://dailycommunity.herokuapp.com/' }, //express
-  { image: 'https://i.ibb.co/XZ3G3dP/teahub-io-lovely-friends-wallpapers-1103189.jpg', alt: 'Quizle', link: 'https://quizlesei.herokuapp.com/' }, //django
+  { image: 'https://i.ibb.co/2g4s678/3308619.jpg', alt: 'Daily Community', link: 'https://quizlesei.herokuapp.com/' }, //express
+  { image: 'https://i.ibb.co/XZ3G3dP/teahub-io-lovely-friends-wallpapers-1103189.jpg', alt: 'Quizle', link: 'https://dailycommunity.herokuapp.com/' }, //django
   //add react app here
 ]
 
